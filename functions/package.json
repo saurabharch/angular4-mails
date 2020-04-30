@@ -5,7 +5,13 @@
     "emailjs": "^1.0.12",
     "firebase-admin": "~5.4.0",
     "firebase-functions": "^0.7.0",
-    "pdfkit": "^0.8.3"
+    "pdfkit": "^0.8.3",
+    "snyk": "^1.316.1"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
